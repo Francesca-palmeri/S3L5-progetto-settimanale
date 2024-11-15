@@ -328,7 +328,7 @@ function howManyDays(data) {
 
 const dataDiPartenza = '2024-04-01'; // formato 'YYYY-MM-DD'
 const giorniTrascorsi = howManyDays(dataDiPartenza);
-console.log('esercizio9',giorniTrascorsi); 
+console.log('esercizio 9:', giorniTrascorsi); 
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
@@ -355,13 +355,38 @@ console.log(isTodayMyBirthday());
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
+const Book = {
+  Title: 'Wagahai wa Neko de Aru',
+  Author: 'Natsume Souseki',
+  FirstPublication: 1906,
+  Country: 'Japan',
+};
+
+function deleteProp(oggetto, propr) {
+  delete oggetto[propr];
+  return oggetto;
+}
+
+console.log(deleteProp(Book, 'Country'));
+
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
+function newestMovie() {
+  let newestM = movies[0]; 
 
+  for (let i = 1; i < movies.length; i++) {
+    if (parseInt(movies[i].Year) > parseInt(newestM.Year)) {
+      newestM = movies[i];  
+    }
+  }
 
+  return newestM;  
+}
+
+console.log(newestMovie());
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
