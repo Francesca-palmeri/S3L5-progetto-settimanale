@@ -221,16 +221,40 @@ console.log(whoIsBigger(20, 35));
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
+function splitMe(string){
+  return string.split(' ');
+}
+
+console.log(splitMe('Ciao mi chiamo Francesca'));
+
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
+
+function deleteOne(str, booleano){
+ if (booleano){
+  return str.slice(1);
+ } else {
+  return str.slice(0,-1);
+ }
+}
+
+console.log(deleteOne('Epicode', true));
+console.log(deleteOne('Studente', false));
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
+
+function onlyLetters(string){
+  return string.replaceAll(/\d+/g, '');
+}
+
+console.log(onlyLetters('Sono 3 settimane di studi'));
+console.log(onlyLetters('25364.kn'));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
