@@ -260,9 +260,26 @@ console.log(onlyLetters('25364.kn'));
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+function isThisEmail(string){
+  const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return regexEmail.test(string);
+}
+
+console.log(isThisEmail('francesca.palmeri@gmail.com'));
+console.log(isThisEmail('lucia.pomeriggi.com'));
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+
+function whatDayIsIt(){
+const weekDays = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
+const today = new Date().getDay();
+
+return weekDays[today];
+}
+
+console.log(whatDayIsIt());
+
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -281,9 +298,24 @@ console.log(onlyLetters('25364.kn'));
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
+
+
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+
+function isTodayMyBirthday() {
+  const today = new Date(); 
+
+  if (today.getDate() === 1 && today.getMonth() === 4) {
+    return true;  
+  } else {
+    return false;
+}
+}
+
+console.log(isTodayMyBirthday());  
+
 
 // Arrays & Oggetti
 
@@ -388,4 +420,3 @@ console.log(onlyLetters('25364.kn'));
 */
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
-
