@@ -1,119 +1,118 @@
 const movies = [
   {
-    Title: 'The Lord of the Rings: The Fellowship of the Ring',
-    Year: '2001',
-    imdbID: 'tt0120737',
-    Type: 'movie',
+    Title: "The Lord of the Rings: The Fellowship of the Ring",
+    Year: "2001",
+    imdbID: "tt0120737",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
 
   {
-    Title: 'The Lord of the Rings: The Return of the King',
-    Year: '2003',
-    imdbID: 'tt0167260',
-    Type: 'movie',
+    Title: "The Lord of the Rings: The Return of the King",
+    Year: "2003",
+    imdbID: "tt0167260",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
   },
   {
-    Title: 'The Lord of the Rings: The Two Towers',
-    Year: '2002',
-    imdbID: 'tt0167261',
-    Type: 'movie',
+    Title: "The Lord of the Rings: The Two Towers",
+    Year: "2002",
+    imdbID: "tt0167261",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
   },
   {
-    Title: 'Lord of War',
-    Year: '2005',
-    imdbID: 'tt0399295',
-    Type: 'movie',
+    Title: "Lord of War",
+    Year: "2005",
+    imdbID: "tt0399295",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BMTYzZWE3MDAtZjZkMi00MzhlLTlhZDUtNmI2Zjg3OWVlZWI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BMTYzZWE3MDAtZjZkMi00MzhlLTlhZDUtNmI2Zjg3OWVlZWI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
   },
   {
-    Title: 'Lords of Dogtown',
-    Year: '2005',
-    imdbID: 'tt0355702',
-    Type: 'movie',
+    Title: "Lords of Dogtown",
+    Year: "2005",
+    imdbID: "tt0355702",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BNDBhNGJlOTAtM2ExNi00NmEzLWFmZTQtYTZhYTRlNjJjODhmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BNDBhNGJlOTAtM2ExNi00NmEzLWFmZTQtYTZhYTRlNjJjODhmXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
   },
   {
-    Title: 'The Lord of the Rings',
-    Year: '1978',
-    imdbID: 'tt0077869',
-    Type: 'movie',
+    Title: "The Lord of the Rings",
+    Year: "1978",
+    imdbID: "tt0077869",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BOGMyNWJhZmYtNGQxYi00Y2ZjLWJmNjktNTgzZWJjOTg4YjM3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BOGMyNWJhZmYtNGQxYi00Y2ZjLWJmNjktNTgzZWJjOTg4YjM3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
   },
   {
-    Title: 'Lord of the Flies',
-    Year: '1990',
-    imdbID: 'tt0100054',
-    Type: 'movie',
+    Title: "Lord of the Flies",
+    Year: "1990",
+    imdbID: "tt0100054",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BOTI2NTQyODk0M15BMl5BanBnXkFtZTcwNTQ3NDk0NA@@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BOTI2NTQyODk0M15BMl5BanBnXkFtZTcwNTQ3NDk0NA@@._V1_SX300.jpg",
   },
   {
-    Title: 'The Lords of Salem',
-    Year: '2012',
-    imdbID: 'tt1731697',
-    Type: 'movie',
+    Title: "The Lords of Salem",
+    Year: "2012",
+    imdbID: "tt1731697",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_SX300.jpg",
   },
   {
-    Title: 'Greystoke: The Legend of Tarzan, Lord of the Apes',
-    Year: '1984',
-    imdbID: 'tt0087365',
-    Type: 'movie',
+    Title: "Greystoke: The Legend of Tarzan, Lord of the Apes",
+    Year: "1984",
+    imdbID: "tt0087365",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BMTM5MzcwOTg4MF5BMl5BanBnXkFtZTgwOTQwMzQxMDE@._V1_SX300.jpg",
   },
   {
-    Title: 'Lord of the Flies',
-    Year: '1963',
-    imdbID: 'tt0057261',
-    Type: 'movie',
+    Title: "Lord of the Flies",
+    Year: "1963",
+    imdbID: "tt0057261",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BOGEwYTlhMTgtODBlNC00ZjgzLTk1ZmEtNmNkMTEwYTZiM2Y0XkEyXkFqcGdeQXVyMzU4Nzk4MDI@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BOGEwYTlhMTgtODBlNC00ZjgzLTk1ZmEtNmNkMTEwYTZiM2Y0XkEyXkFqcGdeQXVyMzU4Nzk4MDI@._V1_SX300.jpg",
   },
   {
-    Title: 'The Avengers',
-    Year: '2012',
-    imdbID: 'tt0848228',
-    Type: 'movie',
+    Title: "The Avengers",
+    Year: "2012",
+    imdbID: "tt0848228",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
   },
   {
-    Title: 'Avengers: Infinity War',
-    Year: '2018',
-    imdbID: 'tt4154756',
-    Type: 'movie',
+    Title: "Avengers: Infinity War",
+    Year: "2018",
+    imdbID: "tt4154756",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg",
   },
   {
-    Title: 'Avengers: Age of Ultron',
-    Year: '2015',
-    imdbID: 'tt2395427',
-    Type: 'movie',
+    Title: "Avengers: Age of Ultron",
+    Year: "2015",
+    imdbID: "tt2395427",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
   },
   {
-    Title: 'Avengers: Endgame',
-    Year: '2019',
-    imdbID: 'tt4154796',
-    Type: 'movie',
+    Title: "Avengers: Endgame",
+    Year: "2019",
+    imdbID: "tt4154796",
+    Type: "movie",
     Poster:
-      'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
+      "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
   },
-]
-
+];
 
 /*
 REGOLE
@@ -130,7 +129,7 @@ REGOLE
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 let num1 = 10;
-let num2= 20;
+let num2 = 20;
 
 let sum = num1 + num2;
 
@@ -139,7 +138,7 @@ console.log(sum);
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
-let random = Math.floor(Math.random()* 21 );
+let random = Math.floor(Math.random() * 21);
 
 console.log(random);
 
@@ -147,11 +146,11 @@ console.log(random);
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
 
-let me = { 
-  name: 'Francesca',
-  surname: 'Palmeri',
+let me = {
+  name: "Francesca",
+  surname: "Palmeri",
   age: 30,
-}
+};
 
 console.log(me);
 
@@ -167,16 +166,15 @@ console.log(me);
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 
+me.skills = ["Javascript", "Python", "C Sharp"];
 
-me.skills =  ['Javascript', 'Python', 'C Sharp',];
-
-console.log (me);
+console.log(me);
 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 
-me.skills.push('CSS');
+me.skills.push("CSS");
 
 console.log(me);
 
@@ -194,8 +192,8 @@ console.log(me);
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
 
-function dice(){
-  return Math.floor(Math.random()* 6 )+ 1;
+function dice() {
+  return Math.floor(Math.random() * 6) + 1;
 }
 
 console.log(dice());
@@ -204,10 +202,10 @@ console.log(dice());
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 
-function whoIsBigger(number1 , number2 ){
-  if ( number1 > number2 ){
+function whoIsBigger(number1, number2) {
+  if (number1 > number2) {
     return number1;
-  } else { 
+  } else {
     return number2;
   }
 }
@@ -221,27 +219,27 @@ console.log(whoIsBigger(20, 35));
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
-function splitMe(string){
-  return string.split(' ');
+function splitMe(string) {
+  return string.split(" ");
 }
 
-console.log(splitMe('Ciao mi chiamo Francesca'));
+console.log(splitMe("Ciao mi chiamo Francesca"));
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
-function deleteOne(str, booleano){
- if (booleano){
-  return str.slice(1);
- } else {
-  return str.slice(0,-1);
- }
+function deleteOne(str, booleano) {
+  if (booleano) {
+    return str.slice(1);
+  } else {
+    return str.slice(0, -1);
+  }
 }
 
-console.log(deleteOne('Epicode', true));
-console.log(deleteOne('Studente', false));
+console.log(deleteOne("Epicode", true));
+console.log(deleteOne("Studente", false));
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
@@ -249,37 +247,44 @@ console.log(deleteOne('Studente', false));
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
-function onlyLetters(string){
-  return string.replaceAll(/\d+/g, '');
+function onlyLetters(string) {
+  return string.replaceAll(/\d+/g, "");
 }
 
-console.log(onlyLetters('Sono 3 settimane di studi'));
-console.log(onlyLetters('25364.kn'));
+console.log(onlyLetters("Sono 3 settimane di studi"));
+console.log(onlyLetters("25364.kn"));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
-function isThisEmail(string){
+function isThisEmail(string) {
   const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   return regexEmail.test(string);
 }
 
-console.log(isThisEmail('francesca.palmeri@gmail.com'));
-console.log(isThisEmail('lucia.pomeriggi.com'));
+console.log(isThisEmail("francesca.palmeri@gmail.com"));
+console.log(isThisEmail("lucia.pomeriggi.com"));
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
 
-function whatDayIsIt(){
-const weekDays = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
-const today = new Date().getDay();
+function whatDayIsIt() {
+  const weekDays = [
+    "Domenica",
+    "Lunedì",
+    "Martedì",
+    "Mercoledì",
+    "Giovedì",
+    "Venerdì",
+    "Sabato",
+  ];
+  const today = new Date().getDay();
 
-return weekDays[today];
+  return weekDays[today];
 }
 
 console.log(whatDayIsIt());
-
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -294,58 +299,58 @@ console.log(whatDayIsIt());
   }
 */
 
-function rollTheDices(number){
+function rollTheDices(number) {
   let sum = 0;
   let values = [];
 
-for (let i = 0; i < number; i++){
-  let valore = dice();
-  values.push(valore);
-  sum += valore
-}
-return {
-  sum: sum,
-  values: values,
-};
+  for (let i = 0; i < number; i++) {
+    let valore = dice();
+    values.push(valore);
+    sum += valore;
+  }
+  return {
+    sum: sum,
+    values: values,
+  };
 }
 
 console.log(rollTheDices(2));
 console.log(rollTheDices(5));
 
-
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-
 
 function howManyDays(data) {
   const dataIniziale = new Date(data);
   const dataCorrente = new Date();
   const differenzaInMillisecondi = dataCorrente - dataIniziale;
   const millisecondiInUnGiorno = 1000 * 60 * 60 * 24;
-  const giorniTrascorsi = Math.floor(differenzaInMillisecondi / millisecondiInUnGiorno);
-  return giorniTrascorsi;}
+  const giorniTrascorsi = Math.floor(
+    differenzaInMillisecondi / millisecondiInUnGiorno
+  );
+  return giorniTrascorsi;
+}
 
-const dataDiPartenza = '2024-04-01'; // formato 'YYYY-MM-DD'
+const dataDiPartenza = "2024-04-01"; // formato 'YYYY-MM-DD'
 const giorniTrascorsi = howManyDays(dataDiPartenza);
-console.log('esercizio 9:', giorniTrascorsi); 
+console.log("esercizio 9:", giorniTrascorsi);
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
 function isTodayMyBirthday() {
-  const today = new Date(); 
+  const today = new Date();
 
   if (today.getDate() === 1 && today.getMonth() === 4) {
-    return true;  
+    return true;
   } else {
     return false;
-}
+  }
 }
 
-console.log(isTodayMyBirthday());  
-
+console.log(isTodayMyBirthday());
 
 // Arrays & Oggetti
 
@@ -356,10 +361,10 @@ console.log(isTodayMyBirthday());
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 const Book = {
-  Title: 'Wagahai wa Neko de Aru',
-  Author: 'Natsume Souseki',
+  Title: "Wagahai wa Neko de Aru",
+  Author: "Natsume Souseki",
   FirstPublication: 1906,
-  Country: 'Japan',
+  Country: "Japan",
 };
 
 function deleteProp(oggetto, propr) {
@@ -367,23 +372,22 @@ function deleteProp(oggetto, propr) {
   return oggetto;
 }
 
-console.log(deleteProp(Book, 'Country'));
-
+console.log(deleteProp(Book, "Country"));
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
 function newestMovie() {
-  let newestM = movies[0]; 
+  let newestM = movies[0];
 
   for (let i = 1; i < movies.length; i++) {
     if (parseInt(movies[i].Year) > parseInt(newestM.Year)) {
-      newestM = movies[i];  
+      newestM = movies[i];
     }
   }
 
-  return newestM;  
+  return newestM;
 }
 
 console.log(newestMovie());
@@ -393,17 +397,16 @@ console.log(newestMovie());
 */
 
 const countMovies = (movies) => {
-  return movies.length
-}
+  return movies.length;
+};
 
 console.log(countMovies(movies));
-
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
 function onlyTheYears(movies) {
-  return movies.map(movie => movie.Year);
+  return movies.map((movie) => movie.Year);
 }
 
 console.log(onlyTheYears(movies));
@@ -413,17 +416,17 @@ console.log(onlyTheYears(movies));
 */
 const onlyInLastMillennium = (array) => {
   return array.filter((movies) => {
-    return parseInt(movies.Year) < 1999
-  })
-}
+    return parseInt(movies.Year) < 1999;
+  });
+};
 
-console.log(onlyInLastMillennium(movies))
+console.log(onlyInLastMillennium(movies));
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
-function sumAllTheYears(movies){
+function sumAllTheYears(movies) {
   return movies.reduce((acc, movie) => acc + parseInt(movie.Year), 0);
 }
 
@@ -433,32 +436,34 @@ console.log(sumAllTheYears(movies));
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
-function searchAndDivide(movies, stringa_4) {
-  const corrispondeTitolo = movies.filter(movie => movie.Title.toLowerCase().includes(stringa_4.toLowerCase()));
-  const nonCorrispondeTitolo = movies.filter(movie => !movie.Title.toLowerCase().includes(stringa_4.toLowerCase()));
+function searchAndDivide(movies, stringa4) {
+  const match = movies.filter((movie) =>
+    movie.Title.toLowerCase().includes(stringa4.toLowerCase())
+  );
+  const unmatch = movies.filter(
+    (movie) => !movie.Title.toLowerCase().includes(stringa4.toLowerCase())
+  );
 
-  return { corrispondeTitolo, nonCorrispondeTitolo }; 
+  return { match, unmatch};
 }
 
-const stringaCercata_1= "Avengers"; 
-const filmDivisi = searchAndDivide(movies, stringaCercata_1);
+const stringaCercata1 = "Avengers";
+const filmDivisi = searchAndDivide(movies, stringaCercata1);
 
-console.log('esercizio 18', filmDivisi);
-
+console.log("esercizio 18", filmDivisi);
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
-function removeIndex(element){
-  const newMovies = [...movies]; 
-  newMovies.splice(element, 1); 
+function removeIndex(element) {
+  const newMovies = [...movies];
+  newMovies.splice(element, 1);
   return newMovies;
 }
 
@@ -471,25 +476,23 @@ console.log(removeIndex(7));
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-const container = document.getElementById('container');
+const container = document.getElementById("container");
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 
-const tagTd = document.querySelectorAll('td');
+const tagTd = document.querySelectorAll("td");
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
-function printAll(){
-  for( let i = 0; i < tagTd.length; i++){
-    tagTd.innerText(tagTd[i]);
+function printAll() {
+  for (let i = 0; i < tagTd.length; i++) {
+    console.log(tdElements[i].textContent);
   }
 }
-
-
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
