@@ -402,27 +402,68 @@ console.log(countMovies(movies));
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
+function onlyTheYears(movies) {
+  return movies.map(movie => movie.Year);
+}
+
+console.log(onlyTheYears(movies));
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+const onlyInLastMillennium = (array) => {
+  return array.filter((movies) => {
+    return parseInt(movies.Year) < 1999
+  })
+}
+
+console.log(onlyInLastMillennium(movies))
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
+function sumAllTheYears(movies){
+  return movies.reduce((acc, movie) => acc + parseInt(movie.Year), 0);
+}
+
+console.log(sumAllTheYears(movies));
+
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+function searchAndDivide(movies, stringa_4) {
+  const corrispondeTitolo = movies.filter(movie => movie.Title.toLowerCase().includes(stringa_4.toLowerCase()));
+  const nonCorrispondeTitolo = movies.filter(movie => !movie.Title.toLowerCase().includes(stringa_4.toLowerCase()));
+
+  return { corrispondeTitolo, nonCorrispondeTitolo }; 
+}
+
+const stringaCercata_1= "Avengers"; 
+const filmDivisi = searchAndDivide(movies, stringaCercata_1);
+
+console.log('esercizio 18', filmDivisi);
+
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+
+function removeIndex(element){
+  const newMovies = [...movies]; 
+  newMovies.splice(element, 1); 
+  return newMovies;
+}
+
+console.log(removeIndex(4));
+console.log(removeIndex(7));
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -430,13 +471,25 @@ console.log(countMovies(movies));
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+const container = document.getElementById('container');
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 
+const tagTd = document.querySelectorAll('td');
+
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+
+function printAll(){
+  for( let i = 0; i < tagTd.length; i++){
+    tagTd.innerText(tagTd[i]);
+  }
+}
+
+
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
