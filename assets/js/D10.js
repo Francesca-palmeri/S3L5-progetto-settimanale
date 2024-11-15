@@ -194,11 +194,26 @@ console.log(me);
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
 
+function dice(){
+  return Math.floor(Math.random()* 6 )+ 1;
+}
 
+console.log(dice());
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
+
+function whoIsBigger(number1 , number2 ){
+  if ( number1 > number2 ){
+    return number1;
+  } else { 
+    return number2;
+  }
+}
+
+console.log(whoIsBigger(52, 36));
+console.log(whoIsBigger(20, 35));
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
