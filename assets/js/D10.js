@@ -317,16 +317,18 @@ console.log(rollTheDices(5));
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
-function howManyDays(data){
-  let pastDate = new Date(data);
-  let todayDate = new Date();
-  let differenceInMls = todayDate - pastDate;
-  let differenceInDays = Math.floor(differenceInMls / (1000 * 60 * 60 * 24));
-  return differenceInDays;
-}
 
-console.log(howManyDays('2020-09-15'));
-console.log(howManyDays('2000-10-14'));
+function howManyDays(data) {
+  const dataIniziale = new Date(data);
+  const dataCorrente = new Date();
+  const differenzaInMillisecondi = dataCorrente - dataIniziale;
+  const millisecondiInUnGiorno = 1000 * 60 * 60 * 24;
+  const giorniTrascorsi = Math.floor(differenzaInMillisecondi / millisecondiInUnGiorno);
+  return giorniTrascorsi;}
+
+const dataDiPartenza = '2024-04-01'; // formato 'YYYY-MM-DD'
+const giorniTrascorsi = howManyDays(dataDiPartenza);
+console.log('esercizio9',giorniTrascorsi); 
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
@@ -359,9 +361,18 @@ console.log(isTodayMyBirthday());
 */
 
 
+
+
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
+
+const countMovies = (movies) => {
+  return movies.length
+}
+
+console.log(countMovies(movies));
+
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
