@@ -294,11 +294,39 @@ console.log(whatDayIsIt());
   }
 */
 
+function rollTheDices(number){
+  let sum = 0;
+  let values = [];
+
+for (let i = 0; i < number; i++){
+  let valore = dice();
+  values.push(valore);
+  sum += valore
+}
+return {
+  sum: sum,
+  values: values,
+};
+}
+
+console.log(rollTheDices(2));
+console.log(rollTheDices(5));
+
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
+function howManyDays(data){
+  let pastDate = new Date(data);
+  let todayDate = new Date();
+  let differenceInMls = todayDate - pastDate;
+  let differenceInDays = Math.floor(differenceInMls / (1000 * 60 * 60 * 24));
+  return differenceInDays;
+}
 
+console.log(howManyDays('2020-09-15'));
+console.log(howManyDays('2000-10-14'));
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
@@ -329,6 +357,7 @@ console.log(isTodayMyBirthday());
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
+
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
